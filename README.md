@@ -60,6 +60,8 @@ All in one messaging hub using API calls to WhatsApp, Facebook messenger, Instag
 ## Wireframes
 
 <img src="https://i.gyazo.com/46f499d2fa347a619770f8d8a7011c6c.gif
+![](Messaging-Hub.gif)
+
 " width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
