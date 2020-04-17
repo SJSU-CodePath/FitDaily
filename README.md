@@ -26,7 +26,7 @@ All in one messaging hub using API calls to WhatsApp, Facebook messenger, Instag
 **Required Must-have Stories**
 
 *  User logs in with the finger print 
-*  User can link more accounts
+*  User can link their social app accounts
 *  User selects social account 
 *  User can start the chat
 
