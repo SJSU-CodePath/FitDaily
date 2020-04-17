@@ -33,20 +33,21 @@ All in one messaging hub using API calls to WhatsApp, Facebook messenger, Instag
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login Screen
+   * login to Messaging-Hub
+* Home Selection Screen
+    * Select the social account 
+* Message Screen
+   * start the chat
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Login Screen
+* Home selection Screen
+* List of Messages Screen
+* Messages Screen
 
 **Flow Navigation** (Screen to Screen)
 
@@ -60,8 +61,6 @@ All in one messaging hub using API calls to WhatsApp, Facebook messenger, Instag
 ## Wireframes
 
 <img src="https://i.gyazo.com/46f499d2fa347a619770f8d8a7011c6c.gif
-![](Messaging-Hub.gif)
-
 " width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
