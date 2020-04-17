@@ -49,19 +49,12 @@ All in one messaging hub using API calls to WhatsApp, Facebook messenger, Instag
 * List of Messages Screen
 * Messages Screen
 
-**Flow Navigation** (Screen to Screen)
 
-* 
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
 
 ## Wireframes
 
-<img src="https://i.gyazo.com/46f499d2fa347a619770f8d8a7011c6c.gif
-" width=600>
+![](Messaging-Hub.gif)
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
