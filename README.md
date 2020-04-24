@@ -68,24 +68,17 @@ Data Models:
 
  | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
-   | commentsCount | Number   | number of comments that has been posted to an image |
+   | author        | Pointer to User|  Name / profile image of author recipient |
+   | object        | String   | Unique id for each message |
+   | CreatedAt       | DateTime | Date / Time when a message is sent |
+   | MessagesCount | Number   | Number of messages inside of a conversation|
    | likesCount    | Number   | number of likes for the post |
-   | createdAt     | DateTime | date when post is created (default field) |
-   | updatedAt     | DateTime | date when post is last updated (default field) |
 
 
 
 
 
-|Properties    | Type                |Description|
-|author        | Pointer to user     | Name / profile image of author recipient
-|object        | String              |Unique id for each message
-|CreatedAt     | DateTime            | Date / Time when a message is sent
-|MessagesCount | Number              | Number of messages inside of a conversation
+
 
 ### Networking
 - [Add list of network requests by screen ]
