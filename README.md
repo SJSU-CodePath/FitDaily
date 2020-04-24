@@ -95,6 +95,14 @@ Data Models:
          }
          ```
       - (Delete) Delete existing chat
+      ```swift
+      PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
+      if (succeeded) {
+        // The array of objects was successfully deleted.
+      } else {
+        // There was an error. Check the errors localizedDescription.
+      }
+     }
    - Chat Screen
       - (Read/Get) Query all the messages
       - (Create/POST) Send a new Message
@@ -107,6 +115,19 @@ Data Models:
 
 
  -Existing API Endpoints
+ > Receive Messages (GET direct_messages)
+Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACCESS_TOKEN>
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 > Receive Messages (GET direct_messages)
 
 Resource URL: https://api.twitter.com/1.1/direct_messages/events/show.json
