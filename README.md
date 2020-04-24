@@ -140,7 +140,9 @@ Twitter -
         }, failure: { (error: Error!) -> Void in
             print("Error: \(error.localizedDescription)")
             self.loginFailure?(error)
-        })
+        }
+ 
+ 
  
 -> Log out
  
