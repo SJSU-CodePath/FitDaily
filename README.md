@@ -167,6 +167,7 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
 ```
 
 > Log out
+ ```
   func logout (){
         deauthorize()
     }
