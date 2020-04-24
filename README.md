@@ -171,6 +171,7 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
   func logout (){
         deauthorize()
     }
+ ```
  
 > Receive Messages (GET direct_messages)
 
