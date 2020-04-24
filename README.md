@@ -135,13 +135,19 @@ Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACC
 Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACCESS_TOKEN>
  
 
- 
+ ----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+ ----------------------------------------------------------------
  
  
  
 Twitter -
  
- -> Log in 
+> Log in 
 ```swift
     func login(url: String, success: @escaping () -> (), failure: @escaping (Error) -> ()){
         loginSuccess = success
@@ -156,22 +162,21 @@ Twitter -
         })
 ```
 
- 
--> Log out
+> Log out
   func logout (){
         deauthorize()
     }
  
--> Receive Messages (GET direct_messages)
+> Receive Messages (GET direct_messages)
 
 Resource URL: https://api.twitter.com/1.1/direct_messages/events/show.json
 
--> Send Messages (POST direct_messages)
+> Send Messages (POST direct_messages)
 
 Resource URL: 
 https://api.twitter.com/1.1/direct_messages/events/new.json
 
--> Delete Messages (DELETE direct_messages/events/destroy)
+> Delete Messages (DELETE direct_messages/events/destroy)
 Resource URL: https://api.twitter.com/1.1/direct_messages/events/destroy.json
 
 
