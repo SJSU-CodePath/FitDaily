@@ -85,15 +85,15 @@ Data Models:
  
 * Facebook
 
-- login
-```swift
-- (void)viewDidLoad {
+ > login
+  ```swift
+  - (void)viewDidLoad {
   [super viewDidLoad];
     if ([FBSDKAccessToken currentAccessToken]) {
        // TODO:Token is already available.
-    }
-}
-// ....
+     }
+  }
+   // ....
 FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
 [loginManager logInWithReadPermissions:@[@"email"]
                     fromViewController:self
@@ -102,7 +102,7 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
  }];
  ```
 - Home Message Screen
-   - (Read/GET)  Query all chats where user is author
+   > (Read/GET)  Query all chats where user is author
          ```swift
          let query = PFQuery(className:"Messages")
          query.getObjectsInBackground { (Messages: [PFObject]?, error: Error?) in
@@ -113,7 +113,7 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
             }
          }
          ```
-   - (Delete) Delete existing chat
+   > (Delete) Delete existing chat
       ```swift
       PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
       if (succeeded) {
@@ -123,8 +123,8 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
       }
      }
   - Chat Screen
-  - (Read/Get) Query all the messages
-  - (Create/POST) Send a new Message
+     > (Read/Get) Query all the messages
+     > (Create/POST) Send a new Message
 
 > Receive Messages (GET direct_messages)
 
