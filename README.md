@@ -109,7 +109,7 @@ Data Models:
 
 
 
- Existing API Endpoints
+ -Existing API Endpoints
 > Receive Messages (GET direct_messages)
 
 Resource URL: https://api.twitter.com/1.1/direct_messages/events/show.json
