@@ -85,15 +85,12 @@ Data Models:
    - Home Message Screen
       - (Read/GET)  Query all chats where user is author
          ```swift
-         let query = PFQuery(className:"Post")
-         query.whereKey("author", equalTo: currentUser)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+         let query = PFQuery(className:"Messages")
+         query.getObjectsInBackground { (Messages: [PFObject]?, error: Error?) in
             if let error = error { 
                print(error.localizedDescription)
-            } else if let posts = posts {
-               print("Successfully retrieved \(posts.count) posts.")
-           // TODO: Do something with posts...
+            } else if let messages = messages {
+               print("Successfully retrieved \(messages.count) messages.")
             }
          }
          ```
