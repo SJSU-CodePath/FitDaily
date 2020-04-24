@@ -101,8 +101,8 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
   //TODO: process error or result
  }];
  ```
-- Home Message Screen
-   > (Read/GET)  Query all chats where user is author
+ >Home Message Screen
+   - (Read/GET)  Query all chats where user is author
          ```swift
          let query = PFQuery(className:"Messages")
          query.getObjectsInBackground { (Messages: [PFObject]?, error: Error?) in
@@ -113,7 +113,7 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
             }
          }
          ```
-   > (Delete) Delete existing chat
+   - (Delete) Delete existing chat
       ```swift
       PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
       if (succeeded) {
@@ -122,9 +122,9 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
         // There was an error. Check the errors localizedDescription.
       }
      }
-  - Chat Screen
-     > (Read/Get) Query all the messages
-     > (Create/POST) Send a new Message
+  > Chat Screen
+     - (Read/Get) Query all the messages
+     - (Create/POST) Send a new Message
 
 > Receive Messages (GET direct_messages)
 
