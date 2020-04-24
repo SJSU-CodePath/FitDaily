@@ -132,11 +132,11 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
 
 > Receive Messages (GET direct_messages)
 
-Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACCESS_TOKEN>
+  - Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACCESS_TOKEN>
 
 > Send Messages (GET direct_messages)
 
-Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACCESS_TOKEN>
+  - Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACCESS_TOKEN>
  
 
  ----------------------------------------------------------------------------------------------------------------
@@ -173,14 +173,15 @@ Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACC
  
 > Receive Messages (GET direct_messages)
 
-Resource URL: https://api.twitter.com/1.1/direct_messages/events/show.json
+ - Resource URL: https://api.twitter.com/1.1/direct_messages/events/show.json
 
 > Send Messages (POST direct_messages)
 
-Resource URL: https://api.twitter.com/1.1/direct_messages/events/new.json
+ - Resource URL: https://api.twitter.com/1.1/direct_messages/events/new.json
 
 > Delete Messages (DELETE direct_messages/events/destroy)
-Resource URL: https://api.twitter.com/1.1/direct_messages/events/destroy.json
+
+ - Resource URL: https://api.twitter.com/1.1/direct_messages/events/destroy.json
 
 
       
