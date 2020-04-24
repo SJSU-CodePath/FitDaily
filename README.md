@@ -83,7 +83,7 @@ Data Models:
 ### Networking
 #### List of network requests by screen
    - Home Message Screen
-      - (Read/GET) Query all posts where user is author
+      - (Read/GET)  Query all chats where user is author
          ```swift
          let query = PFQuery(className:"Post")
          query.whereKey("author", equalTo: currentUser)
@@ -97,17 +97,19 @@ Data Models:
             }
          }
          ```
-      - (Create/POST) Create a new like on a post
-      - (Delete) Delete existing like
-      - (Create/POST) Create a new comment on a post
-      - (Delete) Delete existing comment
-   - Create Post Screen
-      - (Create/POST) Create a new post object
-   - Profile Screen
-      - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
+      - (Delete) Delete existing chat
+   - Chat Screen
+      - (Read/Get) Query all the messages
+      - (Create/POST) Send a new Message
+   
+
+   
+      
 
 
+
+
+ Existing API Endpoints
 > Receive Messages (GET direct_messages)
 
 Resource URL: https://api.twitter.com/1.1/direct_messages/events/show.json
