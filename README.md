@@ -83,7 +83,7 @@ Data Models:
 ### Networking
 #### List of network requests by screen
  
-* Facebook
+### Facebook
 
  > login
   ```swift
@@ -149,7 +149,7 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
  
  
  
-* Twitter
+### Twitter
  
 > Log in 
 ```swift
