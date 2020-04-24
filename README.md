@@ -87,7 +87,7 @@ Data Models:
 
  > login
   ```swift
-  - (void)viewDidLoad {
+  (void)viewDidLoad {
   [super viewDidLoad];
     if ([FBSDKAccessToken currentAccessToken]) {
        // TODO:Token is already available.
@@ -102,8 +102,8 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
  }];
  ```
  >Home Message Screen
-   - (Read/GET)  Query all chats where user is author
-         ```swift
+   - (Read/GET)Query all chats where user is author
+       ```swift
          let query = PFQuery(className:"Messages")
          query.getObjectsInBackground { (Messages: [PFObject]?, error: Error?) in
             if let error = error { 
@@ -122,10 +122,13 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
         // There was an error. Check the errors localizedDescription.
       }
      }
-  > Chat Screen
-     - (Read/Get) Query all the messages
+ 
+> Chat Screen
+   - (Read/Get) Query all the messages
    
-     - (Create/POST) Send a new Message
+   - (Create/POST) Send a new Message
+   
+
 
 > Receive Messages (GET direct_messages)
 
