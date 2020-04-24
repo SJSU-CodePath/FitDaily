@@ -83,7 +83,7 @@ Data Models:
 ### Networking
 #### List of network requests by screen
  
-Facebook -
+*Facebook
 
 login
 ```swift
@@ -127,7 +127,8 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
       - (Read/Get) Query all the messages
       - (Create/POST) Send a new Message
 
- > Receive Messages (GET direct_messages)
+> Receive Messages (GET direct_messages)
+
 Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACCESS_TOKEN>
 
 > Send Messages (GET direct_messages)
@@ -145,7 +146,7 @@ Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACC
  
  
  
-Twitter -
+*Twitter
  
 > Log in 
 ```swift
@@ -173,8 +174,7 @@ Resource URL: https://api.twitter.com/1.1/direct_messages/events/show.json
 
 > Send Messages (POST direct_messages)
 
-Resource URL: 
-https://api.twitter.com/1.1/direct_messages/events/new.json
+Resource URL: https://api.twitter.com/1.1/direct_messages/events/new.json
 
 > Delete Messages (DELETE direct_messages/events/destroy)
 Resource URL: https://api.twitter.com/1.1/direct_messages/events/destroy.json
