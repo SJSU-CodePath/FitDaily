@@ -129,12 +129,12 @@ Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACC
  
 Twitter -
 -> Log in 
-
-func login(url: String, success: @escaping () -> (), failure: @escaping (Error) -> ()){
+```swift
+  func login(url: String, success: @escaping () -> (), failure: @escaping (Error) -> ()){
         loginSuccess = success
         loginFailure = failure
         TwitterAPICaller.client?.deauthorize()
-        TwitterAPICaller.client?.fetchRequestToken(withPath: url, method: "GET", callbackURL: URL(string: "alamoTwitter://oauth"), scope: nil, success: { (requestToken: BDBOAuth1Credential!) -> Void in
+        TwitterAPICaller.client?.fetchRequestToken(withPath: url, method: "GET", callbackURL: URL(string: "alamoTwitter://oauth"),     scope: nil, success: { (requestToken: BDBOAuth1Credential!) -> Void in
             let url = URL(string: "https://api.twitter.com/oauth/authorize?oauth_token=\(requestToken.token!)")!
             UIApplication.shared.open(url)
         }, failure: { (error: Error!) -> Void in
