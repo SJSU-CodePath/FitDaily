@@ -82,7 +82,27 @@ Data Models:
 
 ### Networking
 #### List of network requests by screen
-   - Home Message Screen
+ 
+Facebook -
+
+login
+```swift
+- (void)viewDidLoad {
+  [super viewDidLoad];
+    if ([FBSDKAccessToken currentAccessToken]) {
+       // TODO:Token is already available.
+    }
+}
+// ....
+FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
+[loginManager logInWithReadPermissions:@[@"email"]
+                    fromViewController:self
+                               handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+  //TODO: process error or result
+ }];
+ ```
+
+  - Home Message Screen
       - (Read/GET)  Query all chats where user is author
          ```swift
          let query = PFQuery(className:"Messages")
@@ -106,47 +126,39 @@ Data Models:
    - Chat Screen
       - (Read/Get) Query all the messages
       - (Create/POST) Send a new Message
-   
-
-   
-      
-
-
-Facebook -
-
 
  > Receive Messages (GET direct_messages)
 Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACCESS_TOKEN>
 
+> Send Messages (GET direct_messages)
 
+Resource URL: https://graph.facebook.com/v6.0/me/messages?access_token=<PAGE_ACCESS_TOKEN>
  
 
- 
- 
  
  
  
  
 Twitter -
--> Log in 
+ 
+ -> Log in 
 ```swift
-  func login(url: String, success: @escaping () -> (), failure: @escaping (Error) -> ()){
+    func login(url: String, success: @escaping () -> (), failure: @escaping (Error) -> ()){
         loginSuccess = success
         loginFailure = failure
         TwitterAPICaller.client?.deauthorize()
-        TwitterAPICaller.client?.fetchRequestToken(withPath: url, method: "GET", callbackURL: URL(string: "alamoTwitter://oauth"),     scope: nil, success: { (requestToken: BDBOAuth1Credential!) -> Void in
+        TwitterAPICaller.client?.fetchRequestToken(withPath: url, method: "GET", callbackURL: URL(string: "alamoTwitter://oauth"),           scope: nil, success: { (requestToken: BDBOAuth1Credential!) -> Void in
             let url = URL(string: "https://api.twitter.com/oauth/authorize?oauth_token=\(requestToken.token!)")!
             UIApplication.shared.open(url)
         }, failure: { (error: Error!) -> Void in
             print("Error: \(error.localizedDescription)")
             self.loginFailure?(error)
-        }
- 
- 
+        })
+```
+
  
 -> Log out
- 
- func logout (){
+  func logout (){
         deauthorize()
     }
  
@@ -160,7 +172,12 @@ Resource URL:
 https://api.twitter.com/1.1/direct_messages/events/new.json
 
 -> Delete Messages (DELETE direct_messages/events/destroy)
-
 Resource URL: https://api.twitter.com/1.1/direct_messages/events/destroy.json
+
+
+      
+      
+        
+
 
 
