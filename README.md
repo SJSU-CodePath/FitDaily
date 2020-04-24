@@ -124,6 +124,7 @@ FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
      }
   > Chat Screen
      - (Read/Get) Query all the messages
+   
      - (Create/POST) Send a new Message
 
 > Receive Messages (GET direct_messages)
