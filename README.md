@@ -107,6 +107,18 @@ Data Models:
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
 
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+> Receive Messages (GET direct_messages)
+
+Resource URL: https://api.twitter.com/1.1/direct_messages/events/show.json
+
+-> Send Messages (POST direct_messages)
+
+Resource URL: 
+https://api.twitter.com/1.1/direct_messages/events/new.json
+
+-> Delete Messages (DELETE direct_messages/events/destroy)
+
+Resource URL: https://api.twitter.com/1.1/direct_messages/events/destroy.json
+ 
+
