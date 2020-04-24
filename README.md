@@ -65,11 +65,11 @@ All in one messaging hub using API calls to WhatsApp, Facebook messenger, Instag
 ### Models
 Data Models:
 
-Properties    Type                Description
-author        Pointer to user     Name / profile image of author recipient
-object        String              Unique id for each message
-CreatedAt     DateTime            Date / Time when a message is sent
-MessagesCount Number            Number of messages inside of a conversation
+Properties     Type                Description
+author         Pointer to user     Name / profile image of author recipient
+object         String              Unique id for each message
+CreatedAt      DateTime            Date / Time when a message is sent
+MessagesCount  Number            Number of messages inside of a conversation
 
 ### Networking
 - [Add list of network requests by screen ]
