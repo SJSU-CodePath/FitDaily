@@ -18,26 +18,28 @@ A mobile app to keep track of your food and track your progress
 - **Category:** Social Networking/health
 - **Mobile:** All device types
 - **Story:** Calculate caloric intake and keep track of your progress
-- **Market:** To all individuals who 
-- **Habit:** Convient users who have multiple social app accounts and allow them to send and reply messages.
-- **Scope:** First we would let users to login to the messaging-hub, and then the user can link the social app accounts
-
+- **Market:** For all people who are working towards a fitness goal
+- **Habit:** This app could be used daily as the user wanted keeping track of their progress
+- **Scope:** First we would let the user to sign up for an account, and let the user update the profile
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
 
-*  User logs in with the finger print 
-*  User can link their social app accounts
-*  User selects social account 
-*  User can start the chat
-
-
+*  Users can sign up through the app
+*  Users can login to their account
+*  Uses can update their information
+*  Users can log out of the account 
+*  Users have food diary
+*  Users can check their weekly progress report
+*  App calculates the daily caloric allowance
+*  Users can privately chat with other users
+*  Users can chat with the chat bot for health and nutrition advice
 ### 2. Screen Archetypes
 
 * Login Screen
-   * login to Messaging-Hub
+   * login to FitDaily
 * Home Selection Screen
     * Select the social account 
 * Message Screen
