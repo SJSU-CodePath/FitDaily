@@ -1,5 +1,8 @@
 # **Group Project - README**
-# Messaging-Hub
+# FitDaily
+
+![](fitdaily.gif)
+
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -9,13 +12,13 @@
 
 ## Overview
 ### Description
-All in one messaging hub using API calls to WhatsApp, Facebook messenger, Instagram and Twitter to pull DMs to display them all in one application
+A mobile app to keep track of your food and track your progress
 ### App Evaluation
 
-- **Category:** Social Networking
+- **Category:** Social Networking/health
 - **Mobile:** All device types
-- **Story:** Link to multiple accounts including WhatsApp facebook instagram and twitter and access chats
-- **Market:** To all individuals who use multiple social apps
+- **Story:** Calculate caloric intake and keep track of your progress
+- **Market:** To all individuals who 
 - **Habit:** Convient users who have multiple social app accounts and allow them to send and reply messages.
 - **Scope:** First we would let users to login to the messaging-hub, and then the user can link the social app accounts
 
