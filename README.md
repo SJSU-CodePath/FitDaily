@@ -36,6 +36,8 @@ A mobile app to keep track of your food and track your progress
 *  App calculates the daily caloric allowance
 *  Users can privately chat with other users
 *  Users can chat with the chat bot for health and nutrition advice
+
+
 ### 2. Screen Archetypes
 
 * Login Screen
