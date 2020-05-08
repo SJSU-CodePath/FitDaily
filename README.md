@@ -3,6 +3,7 @@
 
 ![](fitdaily.gif)
 
+![](searchBarGif.gif)
 
 ## Table of Contents
 1. [Overview](#Overview)
