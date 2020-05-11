@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'FitDailyApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for FitDailyApp
+	pod 'Parse'
+	pod 'AlamofireImage'
+  pod 'TextFieldEffects'
+  pod 'AFNetworking'
+  pod 'BDBOAuth1Manager'
+
+	
+
+
+  target 'FitDailyAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'FitDailyAppUITests' do
+    # Pods for testing
+  end
+
+end
